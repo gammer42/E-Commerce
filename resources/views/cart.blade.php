@@ -24,8 +24,8 @@
 						</tr>
 					</thead>
 					<tbody>
-						<?php $contents = Cart::content(); ?>
-						@foreach($contents as $cart_product)
+
+					@foreach($contents as $cart_product)
 							<tr>
 								<td class="cart_product">
 									<a href=""><img src="{{url('/img').'/'.$cart_product->options->image}}" style="width:80px;"></a>

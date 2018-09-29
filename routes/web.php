@@ -13,8 +13,14 @@
 //
 Auth::routes(['verify' => true]);
 //
-Route::group(['middleware' => ['web', 'auth', 'verified']], function () {
+Route::group(['middleware' => ['verified']], function () {
+
     Route::get('/home', 'HomeController@index')->name('home');
+
+    ////Payment....................>
+    //
+    //Route::get('/payment','CheckoutController@payment')->name('payment');
+
 });
 //
 //
@@ -26,13 +32,27 @@ Route::group(['middleware' => ['web', 'guest']], function () {
     //
     Route::get('/', 'GuestController@index')->name('index');
     Route::get('/404', 'VoidController@un_404')->name('404');
-    //    Route::get('/blog', 'blogController@index')->name('blog');
-    //    Route::get('/blog-single', 'singleblogController@index')->name('blog-single');
-    //    Route::get('/contact-us', 'ContactController@index' )->name('contact-us');
-    //    Route::get('/product-details', 'productController@index')->name('product-details');
-    //    Route::get('/shop','shopController@index' )->name('shop');
-    //    Route::get('unavailable','VoidController@unavailable' )->name('unavailable');
+    Route::get('/blog', 'blogController@index')->name('blog');
+    Route::get('/blog-single', 'singleblogController@index')->name('blog-single');
+    Route::get('/contact-us', 'ContactController@index')->name('contact-us');
+    Route::get('/product-details', 'productController@index')->name('product-details');
+    Route::get('/shop', 'shopController@index')->name('shop');
+    Route::get('unavailable', 'VoidController@unavailable')->name('unavailable');
     //
+    //Product via Category & Manufacture........>
+    Route::get('category/show_category/{id}', 'GuestController@show_category')->name('show_category');
+    Route::get('manufacture/show_manufacture/{manufacture_id}', 'GuestController@show_manufacture')->name('show_manufacture');
+
+
+    Route::get('product/view_product/{id}', 'HomeController@view_product')->name('view_product');
+
+
+    ////Cart.......................>
+    //
+    Route::get('/cart', 'CartController@index')->name('cart');
+    Route::post('/add_to_cart/{id}', 'CartController@add_to_cart')->name('add_to_cart');
+    Route::get('/cart/delete/{rowId}', 'CartController@delete')->name('delete');
+    Route::post('/cart/update', 'CartController@update')->name('update_cart');
 });
 //
 //Route::group(['middleware' => ['web','auth']], function (){
@@ -85,22 +105,14 @@ Route::group(['middleware' => ['web', 'guest']], function () {
 //
 ////Product >> HomeController................>
 //
-Route::get('product/view_product/{id}', 'HomeController@view_product')->name('view_product');
 //
 //
 //
-////Product via Category & Manufacture........>
-Route::get('category/show_category/{id}', 'HomeController@show_category')->name('show_category');
-Route::get('manufacture/show_manufacture/{manufacture_id}', 'HomeController@show_manufacture')->name('show_manufacture');
+
 //
 //
 //
-////Cart.......................>
-//
-//Route::get('/cart','CartController@index')->name('cart');
-Route::post('/add_to_cart/{id}', 'CartController@add_to_cart')->name('add_to_cart');
-//Route::get('/cart/delete/{rowId}','CartController@delete')->name('delete');
-//Route::post('/cart/update','CartController@update')->name('update_cart');
+
 //
 ////Checkout...................>
 //
@@ -110,9 +122,7 @@ Route::post('/add_to_cart/{id}', 'CartController@add_to_cart')->name('add_to_car
 //Route::get('/checkout','CheckoutController@index')->name('checkout');
 //
 //
-////Payment....................>
-//
-//Route::get('/payment','CheckoutController@payment')->name('payment');
+
 //
 //// 404.....................>
 //

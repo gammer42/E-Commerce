@@ -49,7 +49,8 @@ $published_manufacture = DB::table('manufactures')->where('publication_status',1
                    $published_manufacture = DB::table('manufactures')->where('publication_status',1)->limit(15)->get();
                     foreach($published_manufacture as $v_manufacture)
                     { ?>
-                        <li><a href="{{route('$v_manufacture', $v_manufacture->id)}}"> <span class="pull-right"></span>{{$v_manufacture->manufacture_name}}</a></li>
+                    <li><a href="{{route('show_manufacture', $v_manufacture->manufacture_id)}}"> <span
+                                    class="pull-right"></span>{{$v_manufacture->manufacture_name}}</a></li>
                     <?php } ?>
                 </ul>
             

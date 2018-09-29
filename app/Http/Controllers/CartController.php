@@ -12,7 +12,8 @@ use Illuminate\Support\Facades\Session;
 class CartController extends Controller
 {
     public function index(){
-        return view('cart');
+        $contents = Cart::content();
+        return view('cart', compact('contents'));
     }
 
     public function add_to_cart(Request $request, $id)

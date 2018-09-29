@@ -155,6 +155,7 @@ return [
         /*
          * Manually Add Providers Classes...
          */
+        Darryldecode\Cart\CartServiceProvider::class,
         Zizaco\Entrust\EntrustServiceProvider::class,
 
         /*
@@ -219,7 +220,7 @@ return [
         /*
          * Manually Adding Aliases Classes...
          */
-
+        'Cart' => Darryldecode\Cart\Facades\CartFacade::class,
         'Entrust' => Zizaco\Entrust\EntrustFacade::class,
 
     ],
