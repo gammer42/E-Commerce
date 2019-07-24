@@ -1,0 +1,882 @@
+/*==== Loader Animation CSS Start ===*/
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('spinner.gif') 50% 50% no-repeat rgb(249, 249, 249);
+    opacity: .7;
+}
+/*==== Loader Animation CSS End ===*/
+
+
+/*==== Page Content CSS Start ===*/
+.page-content {
+    background-color: #E9ECF3;
+}
+
+.portlet-title::after {
+    content: "";
+    background-color: #e74c3c;
+    width: 50px;
+    height: 6px;
+    border-radius: 2px;
+    display: block;
+    position: relative;
+    top: 5px;
+    left: 0;
+}
+
+.portlet-title .btn-group {
+    float: right;
+}
+
+/*==== Page Content CSS End ===*/
+
+/*==== Page Breadcrumb & Footer CSS Start ===*/
+.page-breadcrumb, .page-footer {
+    background-color: #FFFFFF;
+}
+
+.page-breadcrumb {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul.page-breadcrumb li a {
+    color: #e74c3c;
+}
+
+ul.page-breadcrumb li a:hover {
+    color: #c0392b;
+}
+
+
+/*==== Navbar & Navbar Logo CSS Start ===*/
+
+.page-logo img.logo {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    float: left;
+}
+
+.page-logo a.navbar-brand {
+    font-size: 18px;
+    font-weight: bold;
+    float: left;
+    margin-top: -2px;
+    color: #8e44ad;
+}
+
+/*==== Navbar & Navbar Logo CSS End ===*/
+
+
+/*==== Sidebar Menu Customized CSS Start ===*/
+
+.rotate {
+    float: right;
+    margin-top: 3px;
+    margin-right: 5px;
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+
+.rotate.down {
+    float: right;
+    margin-top: 3px;
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.fa-dot-circle {
+    font-size: 10px !important;
+    margin-bottom: 1px !important;
+    margin-right: 2px !important;
+}
+
+
+/*==== Sidebar Menu Customized CSS End ===*/
+
+.table thead tr th, .table tbody tr td:not(:last-child){
+    text-align: center !important;
+    
+}
+
+/*==== Modal Customized CSS Start ===*/
+
+.modal-header h4.modal-title{
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.modal-header {
+    position: relative;
+}
+  
+.modal-header .modal-close{
+    margin: 0;
+    border: 0;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 27px;
+    height: 27px;
+    border-radius: 50% !important;
+    background-color: #ecf0f1;
+    opacity: 1;
+    z-index: 10;
+}
+
+  
+.modal-content {
+    border: 10px solid #ecf0f1
+}
+
+label.control-label {
+    font-weight: bold;
+}
+
+textarea {
+    width: 100% !important;
+}
+
+.modal-body .row p {
+    font-size: 14px;
+    font-weight: bold;
+}
+table tbody tr td .form-group {
+    margin-bottom: 0 !important;
+}
+/*==== Modal Customized CSS End ===*/
+
+
+/*==== Panel Customized CSS Start ===*/
+
+.panel-default .panel-body {
+    background-color: #f7f7f7;
+}
+
+/*==== Panel Customized CSS End ===*/
+
+
+/*==== Tabs Customized CSS Start ===*/
+.nav-pills {
+    margin-bottom: 15px;
+}
+
+.nav-pills li a {
+    background-color: #c0392b !important;
+    color: #f7f7f7;
+    margin-right: 5px;
+    padding: 6px 15px 6px 15px;
+}
+
+.nav-pills li a:hover {
+    opacity: 0.8;
+}
+
+.nav-pills li.active a {
+    background-color: #2980b9 !important;
+}
+
+.tab-content .tab-pane {
+    margin-top: 30px;
+}
+
+.nav-pills li#points a {
+    background-color: #8e44ad !important;
+}
+
+.nav-pills li#balance a {
+    background-color: #f39c12 !important;
+}
+
+
+/* .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover{
+    background-color: #c0392b;
+} */
+
+/*==== Tabs Customized CSS Start ===*/
+
+
+/*==== Image Customized CSS Start ===*/
+
+img.profile-square {
+    border: 10px solid #ecf0f1;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+img.logo-square {
+    border: 10px solid #ecf0f1;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+/*==== Image Customized CSS Start ===*/
+
+
+/*==== Button Customized CSS Start ===*/
+
+.btn {
+    border-radius: 5px !important;
+}
+
+/*==== Button Customized CSS End ===*/
+
+
+
+/* view modal  list borderless design*/
+
+.borderless li {
+    border: 0 !important;
+}
+
+.borderless {
+    border: none !important;
+}
+
+
+/* view modal  */
+
+p.colon {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+h5.title {
+    text-align: center;
+    font-weight: 700;
+    color: #e74c3c;
+}
+
+input[type="radio"]:checked {
+    background-color: #e74c3c;
+}
+
+
+/*==== Radio & Checklist Customized CSS Start ===*/
+
+:checked+span {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/*==== Radio & Checklist Customized CSS End ===*/
+
+/*==== Custom Table CSS Start ===*/
+
+.rTable {
+    display: table;
+    width: 100%;
+}
+
+.rTableRow {
+    display: table-row;
+}
+
+.rTableHeading {
+    display: table-header-group;
+    background-color: #ddd;
+}
+
+.rTableCell,
+.rTableHead {
+    display: table-cell;
+    padding: 5px 10px;
+    border: 1px solid #e7ecf1;
+}
+
+.rTableHeading {
+    display: table-header-group;
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+.rTableFoot {
+    display: table-footer-group;
+    font-weight: bold;
+    background-color: #ddd;
+}
+
+.rTableBody {
+    display: table-row-group;
+}
+
+/*==== Custom Table CSS End ===*/
+
+
+/*==== Form Customized CSS Start ===*/
+
+.select2 {
+    width:100% !important;
+}
+
+[class^='select2'] {
+    border-radius: 5px !important;
+}
+
+[class^='form-control'] {
+    border-radius: 5px !important;
+}
+
+.input-group input{
+    border-radius: 5px 0 0 5px !important;
+}
+
+.form-body .row {
+    margin-bottom: 15px;
+}
+
+.horizontal-form label.control-label {
+    font-size: 15px;
+    margin-top: 7px;
+}
+
+#full_width_input {
+    width: 100% !important;
+}
+.form-group input,
+.form-group select,
+.form-group textarea,
+.form-group .select2:not(.form-group input:disabled,
+.form-group input:read-only) {
+    border-left: 3px solid;
+    border-left-color: #34495e;
+}
+
+.form-group input:required,
+.form-group select:required,
+.form-group textarea:required,
+.select2 select:required {
+    border-left: 3px solid;
+    border-left-color: #27ae60;
+}
+
+.form-group input:invalid,
+.form-group select:invalid,
+.form-group textarea:invalid,
+.select2 select:invalid {
+    border-left: 3px solid;
+    border-left-color: #e74c3c;
+}
+
+.form-control:focus {
+    border: 2px solid #bdc3c7;
+    box-shadow: none;
+    border-radius: 5px;
+    transition: border-color .5s ease-out;
+    -webkit-box-shadow: none;
+}
+
+.has-error .form-control:focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+/*==== Form Customized CSS End ===*/
+
+
+/*==== User Section CSS Start ===*/
+
+#earn_point{
+    margin-bottom: 30px;
+}
+#earn_point p{
+    margin-top: 7px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*==== User Section CSS End ===*/
+
+
+/*==== Customer Section CSS End ===*/
+
+.nav-pills li#points a {
+    background-color: #8e44ad !important;
+    cursor:not-allowed;
+}
+
+.nav-pills li#balance a {
+    background-color: #f39c12 !important;
+    cursor:not-allowed;
+}
+
+.nav-pills li#points a:hover, .nav-pills li#balance a{
+    opacity: 1;
+}
+
+#customer_note {
+    border: 1px dashed black;
+    border-radius: 10px !important; 
+}
+
+#customer_heading {
+    background-color: #ecf0f1;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#customer_content {
+    background-color: #FFFFFF;
+}
+
+/*==== Promotion Section CSS Start ===*/
+
+#promotionRow{
+    display:none;
+    border:1px solid #C2CAD8; 
+    border-radius: 10px !important;
+}
+.ms-container{
+    width: 100% !important;
+  }
+
+/*==== Promotion Section CSS End ===*/
+
+
+/*==== Sales Section CSS Start ===*/
+
+.sales-return-search {
+    background-color: #2c3e50;
+    padding: 15px 5px 0 5px;
+}
+
+.sales-input {
+    padding: 0 5px 0 15px;
+}
+
+.sales-btn {
+    padding: 0;
+}
+
+.sales-btn button:hover {
+    background-color: #c0392b;
+    border: none;
+    transition: none;
+    position: fixed;
+}
+
+tbody#cart_item tr td>input.form-control{
+    padding: 0px 3px !important;
+}
+
+td#gt>input.form-control{
+    padding: 0px 3px !important;
+}
+.table>tfoot>tr>td#gt{
+    padding:1px 1px !important;
+}
+/* table>tfoot>tr>td */
+/*==== User Section CSS End ===*/
+
+
+/*==== Sales Section CSS End ===*/
+
+
+/* add transaction sale */
+
+
+#add_transaction .radio-group {
+    font-size: 15px;
+    margin-top: 7px;
+}
+
+
+/* color section */
+
+.orange {
+    background-color: #f39c12;
+    color: #FFFFFF;
+}
+
+.pumpkin {
+    background-color: #f39c12;
+    color: #FFFFFF;
+}
+
+.green {
+    background-color: #27ae60;
+    color: #FFFFFF;
+}
+
+.red {
+    background-color: #c0392b;
+    color: #FFFFFF;
+}
+
+.blue {
+    background-color: #2980b9;
+    color: #FFFFFF;
+}
+
+.orange:hover,
+.blue:hover,
+.green:hover,
+.red:hover,
+.pumpkin:hover {
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+
+.alert-success {
+    background-color: #27ae60!important;
+    color: #f7f7f7;
+    border: 0;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
+}
+
+.alert-danger {
+    background-color: #c0392b !important;
+    color: #f7f7f7;
+    border: 0;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
+}
+
+
+/* custom shaow effect */
+
+.portlet,
+.page-breadcrumb,
+.page-sidebar-menu,
+.navbar,
+.page-footer,
+.dashboard-stat {
+    border: none;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
+}
+
+
+/* add order */
+
+#order_remove_btn {
+    margin-top: 7px;
+}
+
+#add-order-header {
+    background-color: black !important;
+    color: #FFFFFF;
+}
+
+#add-order-header h4 {
+    font-weight: bold;
+}
+
+#add-order-header span {
+    float: right;
+}
+
+.form-control {
+    overflow: hidden;
+    display: block;
+}
+
+
+/* sales */
+
+#salesBtn a {
+    margin-right: 15px;
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: -20px;
+    z-index: 1;
+}
+
+.card {
+    background-color: transparent;
+    color: #333;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 6px rgb(255, 255, 255) transparent, 0 3px 6px rgb(255, 255, 255) transparent !important;
+}
+
+.card-heading,
+.card-heading2 {
+    border-radius: 15px 15px 0 0 !important;
+    padding: 5px 15px 5px 15px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.card-heading2 {
+    border-radius: 10px 10px 0 0 !important;
+    padding: 5px 15px 5px 15px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.card-body {
+    padding: 15px;
+    border-radius: 0 0 15px 15px !important;
+}
+
+.card-body2 {
+    padding: 10px;
+}
+
+#sales_summary_heading {
+    background-color: #FFFFFF;
+    color: #333;
+    text-align: left;
+}
+
+#sales_summary_content {
+    background-color: #FFFFFF;
+}
+
+#sales_summary_heading2 {
+    background-color: #333;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+#sales_summary_content2 {
+    background-color: #E02B5E;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+p.payment_title {
+    border: 1px solid #FF0000;
+    border-width: 0 0 1px 1px;
+    padding: 0 5px 5px 5px;
+    font-weight: bold;
+}
+
+p.payment_title span {
+    float: right !important;
+    padding-right: 10px;
+}
+
+p.discount_title {
+    border: 1px dashed #703688;
+    border-radius: 4px !important;
+    font-weight: bold;
+}
+
+p.discountCus_title {
+    border: 1px dashed #E12330;
+    border-radius: 4px !important;
+    font-weight: bold;
+}
+
+p.discount_title span,
+p.discountCus_title span {
+    float: right !important;
+    padding: 7px;
+}
+
+#sales_summary_heading2 h4 {
+    font-weight: bold;
+}
+
+#sales_summary_content2 h5 {
+    font-weight: bold;
+}
+
+#sales_summary_heading2 span,
+#sales_summary_content2 span {
+    float: right !important;
+    margin-left: 5px;
+}
+
+h5 label#discountValue {
+    float: right !important;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+p label#cusDiscount {
+    float: right !important;
+    margin: 5px 10px 0 0;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+p label#saleDiscount {
+    float: right !important;
+    margin: 5px 10px 0 0;
+    font-weight: bold;
+    color: #7810C2;
+}
+
+#sales_customer_heading {
+    background-color: #FE6A0D;
+}
+
+#sales_customer_content {
+    background-color: #FEF8EF;
+}
+
+#sales_discount_heading {
+    background-color: #7810C2;
+}
+
+#sales_discount_content {
+    background-color: #F0F2FF;
+}
+
+#sales_payment_heading {
+    background-color: #00C648;
+}
+
+#sales_payment_content {
+    background-color: #D0FCE0;
+}
+
+#sales_payment_content2 {
+    background-color: #ABE3BF;
+    border-radius: 10px !important;
+    border: 1px dashed black;
+}
+
+#sales_mobile_heading {
+    background-color: #4A9602;
+}
+
+#sales_mobile_content {
+    background-color: #EAFFD6;
+}
+
+#sales_print {
+    background-color: #FFFFFF;
+    border-radius: 10px !important;
+}
+
+.card_heading h4,
+.card_content h4,
+.card_content2 h5,
+.card_heading p,
+.card_content p,
+.card_heading span,
+.card_content span {
+    font-weight: bold !important;
+}
+
+#sales_summary_heading::after {
+    content: "";
+    background-color: #e74c3c;
+    width: 50px;
+    height: 6px;
+    border-radius: 2px;
+    display: block;
+    position: relative;
+    top: 15px;
+    left: 0;
+}
+
+
+/* switch */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 3.75em;
+    height: 1.125em;
+}
+
+.control {
+    display: none
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 2.125em;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: .4s;
+    margin: 10px 14px;
+    min-height: 12px;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    height: 1.625em;
+    width: 1.625em;
+    left: 0.25em;
+    bottom: 0.25em;
+    border-radius: 50%;
+    background: #fff;
+    transition: .4s;
+}
+
+output.slider {
+    font-size: 6px;
+    line-height: 1;
+}
+
+.control:checked+.switch .slider {
+    background-color: #E02B5E;
+}
+
+.control:checked+.switch .slider::before {
+    transform: translateX(1.625em);
+}
+
+
+/* account management */
+
+.documents {
+    border: 1px solid #dedede;
+}
+
+h5#docs_title {
+    position: absolute;
+    top: -20px;
+    left: 5%;
+    width: 120px;
+    color: #c0392b;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+#trx_inv_search {
+    margin-top: 33px;
+}
+
+@media only screen and (min-width: 992px) {
+    .page-content-wrapper .page-content {
+        padding: 0 20px 0 !important;
+    }
+    .page-sidebar-wrapper {
+        margin-top: 20px;
+    }
+}
+

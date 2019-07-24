@@ -2,23 +2,24 @@
 
 namespace App;
 
-use Zizaco\Entrust\EntrustRole;
+use Illuminate\Database\Eloquent\Model;
 
-class Role extends EntrustRole
+use App\Permission;
+use App\Models\User;
+
+class Role extends Model
 {
+    protected $table = 'roles';
+
+    protected $fillable = ['slug','name'];
+
     public function permissions()
     {
-        return $this->belongsToMany(Permission::class);
+        return $this->belongsToMany(Permission::class, 'permission_role');
     }
 
-    /**
-     * Grant the given permission to a role.
-     *
-     * @param  Permission $permission
-     * @return mixed
-     */
-    public function givePermissionTo(Permission $permission)
+    public function users()
     {
-        return $this->permissions()->save($permission);
+        return $this->belongsToMany(User::class, 'role_user');
     }
 }

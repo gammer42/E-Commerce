@@ -1,0 +1,21 @@
+/* modal-customized */
+.modal-content{
+    border:10px solid #EEEEEE
+}
+label.control-label{
+    font-weight: 600;
+}
+
+textarea {
+  width: 100% !important;
+}
+
+/* table-customized */
+table thead tr th {
+    text-align: center;
+}
+
+/* button-customized */
+.btn {
+    border-radius: 4px !important;
+}
